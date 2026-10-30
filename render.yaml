@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: orbit-tutor
+    runtime: node
+    plan: starter
+    buildCommand: echo 'No build required'
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: CLASSROOM_ACCESS_CODE
+        sync: false

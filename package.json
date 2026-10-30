@@ -1,0 +1,13 @@
+{
+  "name": "orbit-tutor-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Install-free visual AI literacy tutor for guided student practice",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "check": "node --check server/index.js && node --check public/app.js && node --check public/lessons.js"
+  },
+  "engines": { "node": ">=20" }
+}
